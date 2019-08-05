@@ -100,9 +100,24 @@ Prática Baseada em Evidência - R
 
 # Instalando pacotes R
 
+1. RJDBC: install.packages("RJDBC")
 1. DBI database connector: ```install.packages("DBI")```
 1. ODBC install: ```install.packages("odbc")```
 1. DevTools: ```install.packages("devtools")```
+
+# R Using JDBC
+
+1. Install JDK
+1. Install RJDBC: ```install.packages("RJDBC")```
+1. [Download JDBC Oracle](https://download.oracle.com/otn/utilities_drivers/jdbc/121020/ojdbc7.jar?AuthParam=1565034251_6986a513108eca59af3f5b9db995a5ca)
+1. Move JDBC to C:/
+1. Code to acces:
+```
+ llibrary(RJDBC)
+driver <- JDBC(driverclass = "oracle.jdbc.oracleDriver", "C:/ojdbc7.jar")
+con <- dbConnect(driver, "jdbc:oracle:thin:@//IP:PORT:SCHEMA", "usr", "pwd")
+```
+
 
 # Mac ODBC:
 1. https://db.rstudio.com/best-practices/drivers/
