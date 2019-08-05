@@ -98,6 +98,13 @@ Prática Baseada em Evidência - R
 1. [Install R support](http://www.storybench.org/install-r-jupyter-notebook/)
 1.1. Run R commands just starting R console at terminal: ```$ r```
 
+# Instalando pacotes R
+
+1. DBI database connector: ```install.packages("DBI")```
+1. ODBC install: ```install.packages("odbc")```
+1. DevTools: ```install.packages("devtools")```
+
+
 __OBSERVAÇÃO: Não atualize (upgrade) o pip! O tensorflow 1.9 é compatível com o pip instalado neste processo!__ Caso faça o Upgrade, execute o comando a seguir, com o env ativo:
 
 ```bash
