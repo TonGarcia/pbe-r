@@ -104,6 +104,12 @@ Prática Baseada em Evidência - R
 1. ODBC install: ```install.packages("odbc")```
 1. DevTools: ```install.packages("devtools")```
 
+# Windows ODBC Drivers:
+
+1. [MySQL](https://dev.mysql.com/downloads/connector/odbc/)
+1. [PostGres](https://www.postgresql.org/ftp/odbc/versions/msi/)
+1. [Oracle (buscar por ODBC](https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html)
+
 
 __OBSERVAÇÃO: Não atualize (upgrade) o pip! O tensorflow 1.9 é compatível com o pip instalado neste processo!__ Caso faça o Upgrade, execute o comando a seguir, com o env ativo:
 
