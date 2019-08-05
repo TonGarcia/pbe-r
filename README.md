@@ -104,6 +104,10 @@ Prática Baseada em Evidência - R
 1. ODBC install: ```install.packages("odbc")```
 1. DevTools: ```install.packages("devtools")```
 
+# Mac ODBC:
+1. [iODBC](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads#Stable%20Version%203.52.12)
+1. 
+
 # Windows ODBC Drivers:
 
 1. [MySQL](https://dev.mysql.com/downloads/connector/odbc/)
