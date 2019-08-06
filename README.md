@@ -118,6 +118,10 @@ driver <- JDBC(driverclass = "oracle.jdbc.oracleDriver", "C:/ojdbc7.jar")
 con <- dbConnect(driver, "jdbc:oracle:thin:@//IP:PORT:SCHEMA", "usr", "pwd")
 ```
 
+# RStudio EnvVar IF error (mac, works on Windows)
+1. Sys.setenv("JDBC"="~/ojdbc8.jar")
+1. Sys.setenv("ORACLE_USR"="...")
+1. Sys.setenv("ORACLE_PWD"="...")
 
 # Mac ODBC:
 1. https://db.rstudio.com/best-practices/drivers/
@@ -126,7 +130,6 @@ con <- dbConnect(driver, "jdbc:oracle:thin:@//IP:PORT:SCHEMA", "usr", "pwd")
 1. [MySQL](https://dev.mysql.com/downloads/connector/odbc/)
 
 # Windows ODBC Drivers:
-
 1. [MySQL](https://dev.mysql.com/downloads/connector/odbc/)
 1. [PostGres](https://www.postgresql.org/ftp/odbc/versions/msi/)
 1. [Oracle (buscar por ODBC](https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html)
